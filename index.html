@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>React Documentation</header>
+        <a href="#Introduction_to_React" class="nav-link">Introduction to React</a>
+        <a href="#JSX_in_React" class="nav-link">JSX in React</a>
+        <a href="#Components_and_Props" class="nav-link">Components and Props</a>
+        <a href="#State_and_Lifecycle" class="nav-link">State and Lifecycle</a>
+        <a href="#Handling_Events" class="nav-link">Handling Events</a>
+    </nav>
+
+    <main id="main-doc">
+        <section id="Introduction_to_React" class="main-section">
+            <header>Introduction to React</header>
+            <p>React is a JavaScript library for building user interfaces.</p>
+            <p>It lets you compose complex UIs from small and isolated pieces of code called "components."</p>
+            <p>React was created by Jordan Walke, a software engineer at Facebook.</p>
+            <code>const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;</code>
+            <ul>
+                <li>Declarative</li>
+                <li>Component-Based</li>
+                <li>Learn Once, Write Anywhere</li>
+            </ul>
+        </section>
+
+        <section id="JSX_in_React" class="main-section">
+            <header>JSX in React</header>
+            <p>JSX stands for JavaScript XML.</p>
+            <p>It allows you to write HTML inside JavaScript and place them in the DOM without any createElement() and/or appendChild() methods.</p>
+            <code>const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;</code>
+            <p>JSX makes your React code simpler and elegant.</p>
+            <p>You can embed any JavaScript expression in JSX by wrapping it in curly braces {}.</p>
+        </section>
+
+        <section id="Components_and_Props" class="main-section">
+            <header>Components and Props</header>
+            <p>Components let you split the UI into independent, reusable pieces.</p>
+            <p>A function component is a simple way to define a component.</p>
+            <code>function Welcome(props) { return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;; }</code>
+            <p>Props are read-only.</p>
+            <ul>
+                <li>Function Components</li>
+                <li>Class Components</li>
+            </ul>
+        </section>
+
+        <section id="State_and_Lifecycle" class="main-section">
+            <header>State and Lifecycle</header>
+            <p>State is similar to props, but it is private and fully controlled by the component.</p>
+            <p>Components can manage their own state using the `useState` hook.</p>
+            <code>const [count, setCount] = useState(0);</code>
+            <p>The component lifecycle contains several methods like `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`.</p>
+        </section>
+
+        <section id="Handling_Events" class="main-section">
+            <header>Handling Events</header>
+            <p>Handling events with React elements is very similar to handling events on DOM elements.</p>
+            <p>You can pass an event handler function as a prop to a React component.</p>
+            <code>function handleClick() { alert('Button clicked!'); }</code>
+            <p>To handle an event in React, you use the camelCase syntax, like `onClick`.</p>
+        </section>
+    </main>
+</body>
+</html>
